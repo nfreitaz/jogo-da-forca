@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Slab', Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("./Imagens/plano-de-fundo.jpg");
+  background-color: #D9BD8B;
+  background-position: center top;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  min-width: 400px;
+  padding: 10px;
+  font-size: 4.0em;
+}
+
+h2 {
+  margin: 27px;
+}
+
+h3{
+  font-size: 2.3em;
+  margin: 2px;
+  padding: 10px;
+}
+
+.inicio {
+  position: relative;
+  left: 90px;
+  top: 100px;
+}
+
+button {
+
+  display: block;
+  align-items: center;
+  margin: 15px;
+  width: 220px;
+  height: 100px;
+  color: #525151;
+  background-color: #DDB486;
+  border: 2px solid #F2F2F2;
+  border-radius: 25px;
+  box-shadow: 2px 2px #D9BD8B;
+  font-size: 1.1em;
+  font-weight: 700;
+
+}
+
+button:hover {
+  background-color: #D9C5B4;
+  transition: 1s all;
+  transform: scale(1.1);
+}
+
+.nova-palavra{
+  display: none;
+  width: 200px;
+  padding: 10px;
+  margin: 15px;
+  margin: 0 auto;
+  font-size: 1.3em;
+  border: 1px solid #D9BD8B;
+  box-shadow: 2px 5px 2px 2px #D9C5B4;
+}
+
+input::placeholder {
+  color:#525151;
+  font-size: 0.9em;
+}
+
+input:focus {
+  outline: 3px solid #F2F2F2;
+}
+
+#btn-nova-palavra{
+  display: none;
+  width: 100px;
+  padding: 5px;
+
+}
+
+#tela-jogo {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.desenho-forca {
+  fill: black;
+  stroke: black;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+.corpo-boneco {
+  display: none;
+}
+
+.letras-erradas {
+  /*font-size: 2.3em;*/
+  padding: 15px;
+  margin: 15px 15px;
+}
+
+.letras-erradas span {
+  margin: 5px 5px;
+  padding: 10px;
+}
+
+.palavra-sorteada{
+ padding: 10px;
+}
+
+#palavra-sorteada, span { 
+  font-size: 1.9em;
+  text-align: center;
+ 
+}
+
+
+.alerta-mensagem {
+  background-color: rgba(0, 0, 0, 0.849);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.alerta {
+  background: #DDB486;
+  border-radius: 5px;
+  box-shadow: 0 8px 10px 3px #F2F2F2 ;
+  padding: 20px;
+  text-align: center;
+}
+
+.alerta button {
+  cursor: pointer;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 0;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1.2em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  
+}
+.footer{
+  text-align: center;
+}
