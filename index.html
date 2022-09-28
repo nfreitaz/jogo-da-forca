@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet"> 
+
+        <title>Jogo da Forca</title>
+    </head>
+    <body>
+       <section id="abertura-jogo">
+            <h1>Jogo da Forca</h1>
+            <div class="inicio" id="tela-inicial" >
+                <button id="btn-inicio" class="btn-inicio" type="submit"onclick="limpaTela ()">Iniciar o Jogo</button>
+                <button id="btn-adiciona-palavra" class="btn-adiciona-palavra" type="button" onclick="novaPalavra()">Adicionar uma nova palavra</button>
+                <input class="nova-palavra" id="nova-palavra" type="text" placeholder="NOVA PALAVRA"> <button id="btn-nova-palavra" type="submit" onclick="adicionaNovaPalavra()">Adicionar</button>
+            </div>
+        </section>
+        <main id="tela-jogo">
+            <h2>Digite uma letra maiúscula no teclado para iniciar o jogo e tentar adivinhar a palavra.</h2>
+            <div id="container" class="container">
+            <div id="resultado" class="resultado">
+                <svg height="250" width="200" class="desenho-forca">
+                    <!-- forca -->
+                    <line x1="60" y1="20" x2="140" y2="20" />
+                    <line x1="140" y1="20" x2="140" y2="50" />
+                    <line x1="60" y1="20" x2="60" y2="230" />
+                    <line x1="20" y1="230" x2="100" y2="230" />
+          
+                    <!-- cabeça -->
+                    <circle cx="140" cy="70" r="20"  class="corpo-boneco" />
+                    <!-- corpo -->
+                    <line x1="140" y1="90" x2="140" y2="150"  class="corpo-boneco" />
+                    <!-- braços -->
+                    <line x1="140" y1="120" x2="120" y2="100"  class="corpo-boneco" />
+                    <line x1="140" y1="120" x2="160" y2="100"  class="corpo-boneco" />
+                    <!-- pernas -->
+                    <line x1="140" y1="150" x2="120" y2="180"  class="corpo-boneco" />
+                    <line x1="140" y1="150" x2="160" y2="180"  class="corpo-boneco" />
+                </svg>
+            </div>
+            <div id="letras-erradas" class="letras-erradas">
+                <h3>Letras Erradas</h3>
+            </div>
+        </div>
+            <div id="palavra-sorteada" class="palavra-sorteda">
+                
+            </div>
+            <div class="alerta-mensagem" id="alerta-mensagem">
+                <div class="alerta" id="alerta">
+                    <h2 id="caixa-de-texto"></h2>
+                    <button id="btn-reiniciar" onclick="reiniciarJogo()"> De novo! </button>
+                </div>
+            </div>    
+        </main>
+
+        <footer>
+            <div class="footer">
+                Criado por Nayara Freitas
+            </div>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
